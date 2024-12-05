@@ -1,6 +1,9 @@
 @NET_API_HostAddress = http://localhost:5018
+@Token = Test
 
-GET {{NET_API_HostAddress}}/weatherforecast/
+GET {{NET_API_HostAddress}}/Item/GetItemList
 Accept: application/json
+Authorization: {{Token}}
+
 
 ###
