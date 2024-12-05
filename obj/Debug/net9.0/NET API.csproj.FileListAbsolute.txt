@@ -1,0 +1,33 @@
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\appsettings.json
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\NET API.staticwebassets.endpoints.json
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\NET API.exe
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\NET API.deps.json
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\NET API.runtimeconfig.json
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\NET API.dll
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\NET API.pdb
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.csproj.AssemblyReference.cache
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.AssemblyInfoInputs.cache
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.AssemblyInfo.cs
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.csproj.CoreCompileInputs.cache
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\scopedcss\bundle\NET API.styles.css
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\staticwebassets\msbuild.NET API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\staticwebassets\msbuild.NET API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\staticwebassets\msbuild.build.NET API.props
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.NET API.props
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.NET API.props
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.csproj.Up2Date
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.dll
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\refint\NET API.dll
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.pdb
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.genruntimeconfig.cache
+C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\ref\NET API.dll
