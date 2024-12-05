@@ -1,5 +1,5 @@
 @NET_API_HostAddress = http://localhost:5018
-@Token = Test
+@Token = 0CF2892640A8675272ABC992B2C367D67438EFCE3FD5D3FF063ED777BD247BD5
 
 GET {{NET_API_HostAddress}}/Item/List
 Accept: application/json
@@ -11,8 +11,8 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "username": "admin",
-  "password": "admin"
+  "username": "user1",
+  "password": "password1"
 }
 
 ###

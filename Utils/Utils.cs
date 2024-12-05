@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using System.Data;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace NET_API.Utils;
@@ -72,5 +73,18 @@ public class Utils
         }
 
         return result;
+    }
+    
+    public static T Map<T>(IDataRecord record) where T : new()
+    {
+        T obj = new T();
+        foreach (var property in typeof(T).GetProperties())
+        {
+            if (!record.IsDBNull(record.GetOrdinal(property.Name)))
+            {
+                property.SetValue(obj, record[property.Name]);
+            }
+        }
+        return obj;
     }
 }

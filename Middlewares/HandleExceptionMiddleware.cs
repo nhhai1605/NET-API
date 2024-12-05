@@ -1,5 +1,6 @@
 using System.Net;
 using System.Text.Json;
+using NET_API.Entities;
 
 namespace NET_API.Middlewares;
 
@@ -17,11 +18,11 @@ public class HandleExceptionMiddleware
         {
             await _next(httpContext);
         }
-        catch (Exception ex)
+        catch (Error err)
         {
             httpContext.Response.ContentType = "application/json";
-            httpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
-            var errorMessage = JsonSerializer.Serialize(new { Message = ex.Message });
+            httpContext.Response.StatusCode = err.StatusCode;
+            var errorMessage = JsonSerializer.Serialize(new { Message = err.Message });
             await httpContext.Response.WriteAsync(errorMessage);
         }
     }

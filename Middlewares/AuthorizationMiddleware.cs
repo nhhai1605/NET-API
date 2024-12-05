@@ -36,6 +36,10 @@ public class AuthorizationMiddleware
             {
                 return false;
             }
+            if (DateTimeOffset.UtcNow.ToUnixTimeSeconds() - Convert.ToInt64(split[3]) > _appConfig.TokenExpirySeconds)
+            {
+                return false;
+            }
             return true;
         }
         catch (Exception)

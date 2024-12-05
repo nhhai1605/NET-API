@@ -32,3 +32,4 @@ C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.pdb
 C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.genruntimeconfig.cache
 C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\ref\NET API.dll
 C:\Users\nguyenhh\Desktop\Work\NET API\obj\Debug\net9.0\NET API.sourcelink.json
+C:\Users\nguyenhh\Desktop\Work\NET API\bin\Debug\net9.0\Npgsql.dll
