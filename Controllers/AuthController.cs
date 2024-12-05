@@ -24,6 +24,7 @@ public class AuthController : ControllerBase
     {
         try
         {
+            string token;
             using (NpgsqlDataSource datasource = NpgsqlDataSource.Create(_appConfig.PostgresConnection))
             {
                 using var connection = datasource.OpenConnection();
@@ -46,10 +47,10 @@ public class AuthController : ControllerBase
                         throw new Error((int)HttpStatusCode.InternalServerError, "Internal Server Error");
                     }
                     User user = users.First();
-                    string token = Utils.Utils.EncryptAES($"{user.Id}~{user.Username}~{user.Password}~{DateTimeOffset.UtcNow.ToUnixTimeSeconds()}", _appConfig.SecretKey);
-                    return token;
+                    token = Utils.Utils.EncryptAES($"{user.Id}~{user.Username}~{user.Password}~{DateTimeOffset.UtcNow.ToUnixTimeSeconds()}", _appConfig.SecretKey);
                 }
             }
+            return token;
         }
         catch (Exception e)
         {

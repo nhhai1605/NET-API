@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Net;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using NET_API.Configurations;
 using NET_API.Entities;
+using Npgsql;
 
 namespace NET_API.Controllers;
 
@@ -20,6 +22,26 @@ public class ItemController : ControllerBase
     [Route(nameof(List))]
     public List<Item> List()
     {
-        return new List<Item>();
+        try
+        {
+            List<Item> items = new List<Item>();
+            using (NpgsqlDataSource datasource = NpgsqlDataSource.Create(_appConfig.PostgresConnection))
+            {
+                using var connection = datasource.OpenConnection();
+                using (var command = new NpgsqlCommand("SELECT * FROM item.item", connection))
+                {
+                    var reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        items.Add(Utils.Utils.Map<Item>(reader));
+                    }
+                }
+            }
+            return items;
+        }
+        catch (Exception e)
+        {
+            throw new Error((int)HttpStatusCode.InternalServerError, e.Message);
+        }
     }
 }
