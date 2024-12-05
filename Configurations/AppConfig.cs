@@ -2,10 +2,7 @@
 
 public class AppConfig
 {
-    public AppConfig()
-    {
-
-    }
-    public string SecretKey { get; set; } 
+    public string PostgresConnection { get; set; } = string.Empty;
+    public string SecretKey { get; set; } = string.Empty;
     public int TokenExpirySeconds  { get; set; }
 }

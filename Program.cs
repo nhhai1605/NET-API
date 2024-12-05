@@ -1,4 +1,6 @@
 using NET_API.Configurations;
+using NET_API.Controllers;
+using NET_API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +11,14 @@ var builder = WebApplication.CreateBuilder(args);
 //NHH: Add controllers
 builder.Services.AddControllers();
 builder.Services.Configure<AppConfig>(builder.Configuration.GetSection(nameof(AppConfig)));
-
 var app = builder.Build();
+
+//Only allow access to the AuthController
+app.UseWhen(context => !context.Request.Path.StartsWithSegments("/Auth"), appBuilder =>
+{
+    appBuilder.UseMiddleware<AuthorizationMiddleware>();
+});
+app.UseMiddleware<HandleExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 // if (app.Environment.IsDevelopment())
